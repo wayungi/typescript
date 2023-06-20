@@ -28,7 +28,9 @@
     static typing : types ara checked at compile time (ts)
     dynamic typing : types are checked at run time (js)
 
-
-
 */  
+
+// **data type
+// number, boolean, any
+let album: string | number   // union
  
