@@ -1,6 +1,6 @@
 "use strict";
-let username = "wayungi";
-console.log(username);
+//! let username = "wayungi"
+//! console.log(username)
 //   ***learner notes****
 // tsc filename.ts -w :will watch & recompile 
 // tsc --init : create the typescript config file
@@ -10,13 +10,14 @@ console.log(username);
     "src"
   ]
   */
-let a = 12;
-let b = '2';
-let c = 4;
-console.log(a / b);
+//! let a = 12
+//! let b = '2'
+//! let c = 4
+//! console.log(a/b)
 // noEmitOnError :is a tsconfig setting that stops typescript from compiling a js file when the compiler has errors
 // we could also do it on the terminal like this: tsc --noEmitOnError -w
-//  **terminology**
+// **===========lesson 2====================**
+//?  terminology
 /*
     strongly typed       : require type specification (typescript)
     loosely/weakly typed : Dont require type specification (javascript)
