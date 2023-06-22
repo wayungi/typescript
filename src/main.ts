@@ -37,25 +37,42 @@
      
 // **===========lesson 3==================**
 //? arrays,objects, enums, 
-let names = ["james", "jack", "john"];
-let james = ['Day', 'Male', 35];
-let mixed = ['Black', 36, false];
+    //! let names = ["james", "jack", "john"];
+    //! let james = ['Day', 'Male', 35];
+    //! let mixed = ['Black', 36, false];
 
-mixed = names
-james = names
-// names = james //not acceptable
+    //! mixed = names
+    //! james = names
+    //! names = james //not acceptable
 
 // definning arrays with predefined types
-let test = []; // can hold any data type
-let bands: string[] = []; // can only hold string
+    //! let test = []; // can hold any data type
+    //! let bands: string[] = []; // can only hold string
 
-test.push('long', true, 36) // will take any data type
-console.log(test)
+    //! test.push('long', true, 36) // will take any data type
+    //! console.log(test)
 //  bands.push("eagle", "afrigo", 1) //  will throw an error because 1 is not a string
 
 // ** the tuple type : if you want to define an array that takes in specific data types at specific indices then you can define a tuple as below
 
-let tuple: [string, number, boolean] = ["rancis", 37, true]
-let mixer = ['juma', 4, false]
+    //! let tuple: [string, number, boolean] = ["rancis", 37, true]
+    //! let mixer = ['juma', 4, false]
 
 // **objects  53:17
+
+let myobj:object; 
+let bands = ["afrigo","eagles"]
+myobj = {};
+myobj = [] // An array is also an object in javascript
+myobj = bands
+
+let obj =  {
+    prop1: 'string',
+    prop2: true,
+    prop3: 42
+}
+
+    //! obj['prop1'] = 3 // this expression is invalid because prop1 is a string
+
+// obj
+
