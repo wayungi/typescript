@@ -60,25 +60,25 @@
 
 // **objects  53:17
 
-let myobj:object; 
-let bands = ["afrigo","eagles"]
-myobj = {};
-myobj = [] // An array is also an object in javascript
-myobj = bands
+    //! let myobj:object; 
+    //! let bands = ["afrigo","eagles"]
+    //! myobj = {};
+    //! myobj = [] // An array is also an object in javascript
+    //! myobj = bands
 
-let obj =  {
-    prop1: 'string',
-    prop2: true,
-    prop3: 42
-}
+    //! let obj =  {
+    //!     prop1: 'string',
+    //!     prop2: true,
+    //!     prop3: 42
+    //! }
 
     //! obj['prop1'] = 3 // this expression is invalid because prop1 is a string
 
 // object wit  type annotation
 
-type Musician = {
+type Musician = { // you could also use the key "interface" instead of "type" 
     name: string,
-    genre: string[],
+    genre?: string[], //the ? makes this value optional in all datatypes of Musician
     albums: (string|number)[],
     facts: [string, number, boolean], // tribe, year of birth, ever won award
 }
@@ -89,4 +89,18 @@ let gnl_zamba: Musician = {
     albums:[2011, 'katwa'],
     facts: ['zamba', 1987, true]
 }
+
+//Enums
+// example of A level grading system
+enum Grades { //
+    O, // to overide the '0' initialization, O = 4
+    F,
+    E,
+    D,
+    C,
+    B,
+    A
+}
+
+console.log (Grades.O)
 

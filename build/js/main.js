@@ -1,49 +1,22 @@
 "use strict";
 //! let username = "wayungi"
 //! console.log(username)
-//   ***learner notes****
-// tsc filename.ts -w :will watch & recompile 
-// tsc --init : create the typescript config file
-// tsc -w :watch the src folder and compile all typescript files. this is only possible afer initializing typescript with the !tsc --init command
-/* add this in the main tsconfig object to exclude all .ts files that are not inside the src folder from being compile
-"include" : [
-    "src"
-  ]
-  */
-//! let a = 12
-//! let b = '2'
-//! let c = 4
-//! console.log(a/b)
-// noEmitOnError :is a tsconfig setting that stops typescript from compiling a js file when the compiler has errors
-// we could also do it on the terminal like this: tsc --noEmitOnError -w
-// **===========lesson 2====================**
-//?  terminology
-/*
-    strongly typed       : require type specification (typescript)
-    loosely/weakly typed : Dont require type specification (javascript)
-
-    static typing : types ara checked at compile time (ts)
-    dynamic typing : types are checked at run time (js)
-
-*/
-// **data type
-// number, boolean, any
-//! let album: string | number   // union
-// **===========lesson 3==================**
-//? arrays,objects, enums, 
-let names = ["james", "jack", "john"];
-let james = ['Day', 'Male', 35];
-let mixed = ['Black', 36, false];
-mixed = names;
-james = names;
-// names = james //not acceptable
-// definning arrays with predefined types
-let test = []; // can hold any data type
-let bands = []; // can only hold string
-test.push('long', true, 36); // will take any data type
-console.log(test);
-//  bands.push("eagle", "afrigo", 1) //  will throw an error because 1 is not a string
-// ** the tuple type : if you want to define an array that takes in specific data types at specific indices then you can define a tuple as below
-let tuple = ["rancis", 37, true];
-let mixer = ['juma', 4, false];
-// **objects  53:17
+let gnl_zamba = {
+    name: 'zamba',
+    genre: ['luga flow', 'street'],
+    albums: [2011, 'katwa'],
+    facts: ['zamba', 1987, true]
+};
+//Enums
+// example of A level grading system
+var Grades;
+(function (Grades) {
+    Grades[Grades["O"] = 0] = "O";
+    Grades[Grades["F"] = 1] = "F";
+    Grades[Grades["E"] = 2] = "E";
+    Grades[Grades["D"] = 3] = "D";
+    Grades[Grades["C"] = 4] = "C";
+    Grades[Grades["B"] = 5] = "B";
+    Grades[Grades["A"] = 6] = "A";
+})(Grades || (Grades = {}));
+console.log(Grades.O);
