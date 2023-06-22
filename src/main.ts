@@ -74,5 +74,19 @@ let obj =  {
 
     //! obj['prop1'] = 3 // this expression is invalid because prop1 is a string
 
-// obj
+// object wit  type annotation
+
+type Musician = {
+    name: string,
+    genre: string[],
+    albums: (string|number)[],
+    facts: [string, number, boolean], // tribe, year of birth, ever won award
+}
+
+let gnl_zamba: Musician = {
+    name:'zamba',
+    genre: ['luga flow', 'street'],
+    albums:[2011, 'katwa'],
+    facts: ['zamba', 1987, true]
+}
 
